@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-y: scroll;
+    font-size: 16px;
+    min-height: 100vh;
+    margin: 40px;
+}
+
+.main_navi{
+    grid-area:nav;
+    border: 2px solid rgb(247, 103, 103);
+}
+
+#menu{
+    list-style-type: none;
+    font-size: 20px;
+    line-height:32.5px;
+    text-align: center;
+}
+
+#menu>li{
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+
+.main_content{
+    grid-area:main;
+    margin-left: 20px;
+    border: 2px solid rgb(247, 103, 103);
+}
+
+.main_wrapper{
+    min-height:inherit;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav main"
+    "nav main"
+    "nav main";
+}
+
